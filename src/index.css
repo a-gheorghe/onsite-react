@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+
+/* Define a variable at the top level of the cascade */
+:root {
+  --background-grey: #f3f4f7;
+  --background-white: #fcfcfc;
+  --brand-color: #d43021;
+  --font-color: #525260;
+  --accent-blue: #2867c7;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  height: 100%;
 }

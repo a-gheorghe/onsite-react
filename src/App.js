@@ -4,11 +4,11 @@ import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Gallery from './pages/Gallery';
-import Home from './pages/Home';
-import Services from './pages/Services';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Gallery from './pages/Gallery/Gallery';
+import Home from './pages/Home/Home';
+import Services from './pages/Services/Services';
 
 import {
   Route,

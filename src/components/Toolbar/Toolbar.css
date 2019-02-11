@@ -11,17 +11,16 @@
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 1em;
 }
 
 .toolbar__logo {
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 .toolbar__logo a {
-  color: var(--font-color);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .spacer {
@@ -36,7 +35,7 @@
 }
 
 .toolbar__navigation-items li {
-  padding: 0 1.4rem;
+  padding: 0 1.4em;
 }
 
 .toolbar__navigation-items a {
@@ -50,13 +49,15 @@
   color: var(--brand-color);
 }
 
-@media (max-width: 768px) {
+/* small screens */
+@media (max-width: 767px) {
   .toolbar__navigation-items {
     display: none;
   }
 }
 
-@media (min-width: 769px) {
+/* large screens */
+@media (min-width: 768px) {
   .toolbar__toggle-button {
     display: none;
   }

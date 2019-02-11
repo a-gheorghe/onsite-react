@@ -3,7 +3,7 @@
   background-color: var(--background-grey);
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-  padding: 2rem 2.2rem;
+  padding: 2em 2.2em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,7 +44,7 @@
   color: var(--font-color);
   font-weight: 600;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 
 .side-drawer a:hover,
@@ -63,7 +63,7 @@
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .side-drawer {
     display: none;
   }

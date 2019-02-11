@@ -1,0 +1,7 @@
+.card-heading {
+  border-left: 4px solid var(--brand-color);
+  padding-left: 25px;
+  font-size: 1.88em;
+  font-weight: 600;
+  color: var(--font-color);
+}

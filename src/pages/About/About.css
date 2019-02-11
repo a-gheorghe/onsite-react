@@ -1,0 +1,37 @@
+.about__page {
+  background-color: var(--background-grey);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 70px 80px 54px 80px;
+}
+
+.about__card {
+  margin-top: 50px;
+}
+
+.about__mission {
+}
+
+.about__mission--picture {
+  background-color: var(--background-grey);
+  min-width: 260px;
+  max-width: 303px;
+  min-height: 296px;
+  max-width: 303px;
+}
+
+/* small screens */
+@media (max-width: 767px) {
+  .about__page {
+    padding: 50px 15px;
+  }
+  .about__subheading--small {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__subheading--large {
+    display: none;
+  }
+}

@@ -13,11 +13,11 @@ const toolbar = props => (
         <div className="spacer" />
         <div className="toolbar__navigation-items">
           <ul>
-            <li><Link to="/" onClick={props.changeActivePage('Home')}> Home </Link></li>
-            <li><Link to="/about" onClick={props.changeActivePage('About')}> About </Link></li>
-            <li><Link to="/gallery" onClick={props.changeActivePage('Gallery')}> Project Gallery </Link></li>
-            <li><Link to="/services" onClick={props.changeActivePage('Services')}> Services </Link></li>
-            <li><Link to="/contact" onClick={props.changeActivePage('Contact')}> Contact </Link></li>
+            <li><Link to="/" onClick={() => props.changeActivePage('Home')}> Home </Link></li>
+            <li><Link to="/about" onClick={() => props.changeActivePage('About')}> About </Link></li>
+            <li><Link to="/gallery" onClick={() => props.changeActivePage('Gallery')}> Project Gallery </Link></li>
+            <li><Link to="/services" onClick={() => props.changeActivePage('Services')}> Services </Link></li>
+            <li><Link to="/contact" onClick={() => props.changeActivePage('Contact')}> Contact </Link></li>
           </ul>
         </div>
         <div className="toolbar__toggle-button">

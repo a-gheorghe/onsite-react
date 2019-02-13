@@ -1,0 +1,33 @@
+
+
+.employee-info {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.employee {
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.grey-circle {
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    height: 120px;
+    width: 120px;
+    min-height: 120px;
+    min-width: 120px;
+}
+
+.employee-title {
+    color: #d43021;
+}
+
+.employee-bio {
+    margin-top: 20px;
+    font-weight: 400;
+}

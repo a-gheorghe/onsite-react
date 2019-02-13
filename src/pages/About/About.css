@@ -12,12 +12,41 @@
 .about__mission {
 }
 
+.about__subheading--large {
+  margin-bottom: 27px;
+}
+
 .about__mission--picture {
   background-color: var(--background-grey);
   min-width: 260px;
   max-width: 303px;
   min-height: 296px;
   max-width: 303px;
+}
+
+.about__mission--picture img {
+  min-width: 260px;
+  max-width: 303px;
+  min-height: 296px;
+  max-width: 303px;
+}
+
+.about__mission--container {
+  margin-left: 40px;
+}
+
+.about__mission--text {
+  margin-top:40px;
+  line-height: 25px;
+}
+
+.about__mission--text div:last-of-type {
+  margin-top: 20px;
+}
+
+.team--container {
+    width: 100%;
+    padding-top: 60px;
 }
 
 /* small screens */
@@ -27,6 +56,9 @@
   }
   .about__subheading--small {
     display: none;
+  }
+  .about__mission--container {
+    margin-left: 0;
   }
 }
 

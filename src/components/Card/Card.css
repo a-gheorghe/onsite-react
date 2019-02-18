@@ -1,8 +1,14 @@
 .card {
-  width: 100%;
+  /* width: 100%; */
   padding: 60px;
   background-color: var(--background-white);
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow: 0 5px 10px 0 rgba(0, 34, 91, 0.03);
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    padding: 20px;
+  }
 }

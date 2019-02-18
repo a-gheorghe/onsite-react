@@ -1,6 +1,6 @@
 h1 {
   margin: 15px 0 0 0;
-  font-size: 2.8em;
+  font-size: 45px;
   line-height: 3rem;
   color: var(--font-color);
 }
@@ -12,4 +12,10 @@ h1 {
 
 .page-heading span {
   color: var(--brand-color);
+}
+
+@media (max-width: 767.98px) {
+  .page-heading__constant {
+    max-width: 238px;
+  }
 }

@@ -37,7 +37,7 @@ const About = props => (
           <Employee />
         </div>
     </Card>
-    <PastProjects />
+    <PastProjects className="about__past-projects"/>
   </div>
 );
 

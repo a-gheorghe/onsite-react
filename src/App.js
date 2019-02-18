@@ -47,7 +47,7 @@ class App extends Component {
 
     return (
       <div className="app">
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} changeActivePage={this.changeActivePageHandler} />
+        <Toolbar show={this.state.sideDrawerOpen} drawerClickHandler={this.drawerToggleClickHandler} changeActivePage={this.changeActivePageHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} changeActivePage={this.changeActivePageHandler} />
         {backdrop}
         <main>

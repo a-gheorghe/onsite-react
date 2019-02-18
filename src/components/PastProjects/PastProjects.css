@@ -1,28 +1,25 @@
 .past-projects__card {
-  margin-top: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-weight: 600;
+}
+.view-projects a {
+  color: var(--accent-blue);
 }
 
-.past-projects__logos {
-  display: flex;
-  justify-content: space-around;
-}
-
-.past-projects__card img {
-  margin: 0 30px;
-}
-
-.past-projects__card div {
-  display: flex;
-  justify-content: space-between;
+.view-projects img {
+  margin-left: 10px;
 }
 
 .past-projects__text {
   margin-bottom: 55px;
 }
 
-.past-projects__text a:last-of-type {
-  color: var(--accent-blue);
+@media (max-width: 767.98px) {
+  .past-projects__text {
+    margin-bottom: 40px;
+  }
+
+  .img-holder div {
+    padding-bottom: 40px;
+  }
+
 }

@@ -6,7 +6,9 @@ import {
   Link,
 } from 'react-router-dom';
 
-const toolbar = props => (
+const toolbar = props => {
+  console.log('toolbar props', props);
+  return (
   <header className="toolbar">
     <nav className="toolbar__navigation">
         <div className="toolbar__logo"><a href="/"><img src={logo} alt="company logo"/> </a></div>
@@ -21,10 +23,11 @@ const toolbar = props => (
           </ul>
         </div>
         <div className="toolbar__toggle-button">
-          <DrawerToggleButton click={props.drawerClickHandler}/>
+          <DrawerToggleButton show={props.show} click={props.drawerClickHandler}/>
         </div>
     </nav>
   </header>
-);
+  );
+};
 
 export default toolbar;

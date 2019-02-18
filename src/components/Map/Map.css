@@ -1,0 +1,20 @@
+.map {
+    margin-top: 11px;
+}
+
+.map__google {
+    height: 400px;
+    width:100%;
+}
+
+.map__button {
+    padding: 17px 45px;
+    border-width: 0;
+    border-radius: 40px;
+    background-color: #d43021;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+}

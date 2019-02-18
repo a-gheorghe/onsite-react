@@ -1,8 +1,8 @@
 
 
 .employee-info {
-    margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 15px;
+    line-height: 25px;
 }
 
 .employee {
@@ -25,9 +25,16 @@
 
 .employee-title {
     color: #d43021;
+    margin-left: 6px;
 }
 
 .employee-bio {
     margin-top: 20px;
     font-weight: 400;
+}
+
+@media (max-width: 767.98px) {
+  .employee-title {
+    margin-left: 0;
+  }
 }

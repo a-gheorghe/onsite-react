@@ -30,8 +30,11 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdgQWEzHmItURtJZBUYGjUvoj80KmtH9U"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=%REACT_APP_GOOGLE_API_KEY%"></script>
+    <script>
+      console.log("node env", %NODE_ENV%);
+      console.log("google map api key", GOOGLE_API_KEY);
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -1,11 +1,8 @@
 .past-projects__card {
   font-weight: 600;
 }
-.view-projects a {
-  color: var(--accent-blue);
-}
 
-.view-projects img {
+img.arrow {
   margin-left: 10px;
 }
 

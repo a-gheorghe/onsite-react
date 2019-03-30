@@ -16,27 +16,12 @@
   margin-bottom: 27px;
 }
 
-.about__mission--picture {
-  background-color: var(--background-grey);
-  min-width: 260px;
-  max-width: 303px;
-  min-height: 296px;
-  max-width: 303px;
-}
-
 .about__mission--picture img {
-  min-width: 260px;
   max-width: 303px;
-  min-height: 296px;
-  max-width: 303px;
-}
-
-.about__mission--container {
-  margin-left: 40px;
+  width: 100%;
 }
 
 .about__mission--text {
-  margin-top:40px;
   line-height: 25px;
 }
 
@@ -53,23 +38,27 @@
   margin-top: 40px;
 }
 
+.about__mission--text div:first-of-type {
+  margin-top: 20px;
+}
+
 /* small screens */
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .about__page {
     padding: 50px 15px;
   }
   .about__subheading--small {
     display: none;
   }
-  .about__mission--container {
-    margin-left: 0;
-  }
   .team--container {
     padding-top: 40px;
   }
+  .about__mission--text div:first-of-type {
+    margin-top: 0;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .about__subheading--large {
     display: none;
   }

@@ -1,5 +1,4 @@
 
-
 .employee-info {
     margin-top: 15px;
     line-height: 25px;
@@ -14,13 +13,18 @@
     margin-bottom: 60px;
 }
 
-.grey-circle {
-    border-radius: 50%;
-    background-color: #d8d8d8;
-    height: 120px;
-    width: 120px;
-    min-height: 120px;
-    min-width: 120px;
+.employee__picture-holder img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  min-height: 120px;
+  min-width: 120px;
+
+}
+
+.grey-circle img {
+  height: 100%;
+  width: 100%;
 }
 
 .employee-title {

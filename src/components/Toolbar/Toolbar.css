@@ -15,10 +15,6 @@
   padding: 0 1em;
 }
 
-.toolbar__logo {
-  margin-left: 1em;
-}
-
 .toolbar__logo a {
   text-decoration: none;
   font-size: 1.5em;
@@ -50,15 +46,19 @@
   color: var(--brand-color);
 }
 
+.toolbar__navigation-items a.active {
+  color: var(--brand-color);
+}
+
 /* small screens */
-@media (max-width: 767px) {
+@media (max-width: 991.98px) {
   .toolbar__navigation-items {
     display: none;
   }
 }
 
 /* large screens */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .toolbar__toggle-button {
     display: none;
   }

@@ -24,6 +24,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.toggle-button.home-page .toggle-button__line {
+  background-color: var(--background-white);
+}
+
 .toggle-button.is-active .toggle-button__line:nth-child(2) {
   opacity: 0;
 }

@@ -2,8 +2,9 @@ import React from 'react';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import './Toolbar.css';
 import logo from '../../assets/logo-red.svg'
+import classnames from 'classnames';
 import {
-  Link,
+  Link
 } from 'react-router-dom';
 
 const toolbar = props => {
@@ -15,11 +16,11 @@ const toolbar = props => {
         <div className="spacer" />
         <div className="toolbar__navigation-items">
           <ul>
-            <li><Link to="/" onClick={() => props.changeActivePage('Home')}> Home </Link></li>
-            <li><Link to="/about" onClick={() => props.changeActivePage('About')}> About </Link></li>
-            <li><Link to="/gallery" onClick={() => props.changeActivePage('Gallery')}> Project Gallery </Link></li>
-            <li><Link to="/services" onClick={() => props.changeActivePage('Services')}> Services </Link></li>
-            <li><Link to="/contact" onClick={() => props.changeActivePage('Contact')}> Contact </Link></li>
+            <li><Link to="/" onClick={() => props.changeActivePage('Home')} className={classnames({"active": props.activePage === "Home"})}> Home </Link></li>
+            <li><Link to="/about" onClick={() => props.changeActivePage('About')} className={classnames({"active": props.activePage === "About"})}> About </Link></li>
+            <li><Link to="/gallery" onClick={() => props.changeActivePage('Gallery')} className={classnames({"active": props.activePage === "Gallery"})}> Project Gallery </Link></li>
+            <li><Link to="/services" onClick={() => props.changeActivePage('Services')} className={classnames({"active": props.activePage === "Services"})}> Services </Link></li>
+            <li><Link to="/contact" onClick={() => props.changeActivePage('Contact')} className={classnames({"active": props.activePage === "Contact"})}> Contact </Link></li>
           </ul>
         </div>
         <div className="toolbar__toggle-button">

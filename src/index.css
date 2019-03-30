@@ -41,6 +41,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -59,7 +60,6 @@ table {
 }
 
 html {
-  height: 100%;
 }
 
 body {
@@ -71,4 +71,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   color: var(--font-color);
+  line-height: 25px;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  color: var(--accent-blue);
+  font-weight: 600;
+  font-size: 16px;
 }

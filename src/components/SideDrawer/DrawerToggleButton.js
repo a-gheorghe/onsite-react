@@ -5,7 +5,7 @@ import classnames from 'classnames';
 const drawerToggleButton = props => {
   console.log('props drawer toggle button', props)
   return (
-    <button className={classnames("toggle-button", { "is-active": props.show } )} onClick={props.click}>
+    <button className={classnames("toggle-button", { "is-active": props.show, "home-page": props.homePage } )} onClick={props.click}>
       <div className="toggle-button__line"/>
       <div className="toggle-button__line"/>
       <div className="toggle-button__line"/>

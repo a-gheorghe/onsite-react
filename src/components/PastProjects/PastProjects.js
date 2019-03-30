@@ -20,7 +20,7 @@ const PastProjects = props => (
       <div className="col-xs-12 col-sm-6 text-right d-none d-md-block view-projects">
         <Link to="/gallery">
           View Project Gallery
-          <img src={arrow} alt="arrow to see projects" />
+          <img className="arrow" src={arrow} alt="arrow to services page" />
         </Link>
       </div>
     </div>

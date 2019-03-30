@@ -1,6 +1,7 @@
 h1 {
   margin: 15px 0 0 0;
   font-size: 45px;
+  font-weight: 600;
   line-height: 3rem;
   color: var(--font-color);
 }
@@ -12,6 +13,20 @@ h1 {
 
 .page-heading span {
   color: var(--brand-color);
+}
+
+.page-heading.light {
+  position: absolute;
+}
+
+.page-heading.light h1,
+.pageheading.light div,
+.page-heading.light span {
+  color: var(--background-white);
+}
+
+.page-heading.light h1{
+  font-size: 40px;
 }
 
 @media (max-width: 767.98px) {

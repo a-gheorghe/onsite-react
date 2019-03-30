@@ -13,7 +13,7 @@
   width: 70%;
   max-width: 400px;
   z-index: 200;
-  transform: translateX(-100%);
+  transform: translateX(-103%);
   transition: transform .3s ease-out;
 }
 
@@ -36,10 +36,6 @@
   line-height: 40px;
 }
 
-.side-drawer li:first-child {
-  border-left: 4px solid var(--brand-color);
-}
-
 .side-drawer a {
   color: var(--font-color);
   font-weight: 600;
@@ -50,6 +46,10 @@
 .side-drawer a:hover,
 .side-drawer a:active {
   color: var(--brand-color);
+}
+
+.side-drawer li.active {
+  border-left: 4px solid var(--brand-color);
 }
 
 .side-drawer button {
@@ -63,7 +63,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .side-drawer {
     display: none;
   }

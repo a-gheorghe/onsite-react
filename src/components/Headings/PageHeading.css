@@ -34,3 +34,82 @@ h1 {
     max-width: 238px;
   }
 }
+
+.page-heading h1 {
+  margin: 15px 0 0;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--font-color)
+}
+
+.page-heading__constant {
+  font-size: 1.2rem;
+  font-weight: 600
+}
+
+.page-heading span {
+  color: var(--brand-color)
+}
+
+.page-heading.light {
+  position: relative;
+  left: 80px;
+  top: 120px
+}
+
+.page-heading.light h1,.page-heading.light span,.pageheading.light div {
+  color: var(--background-white)
+}
+
+.home__heading--novideo {
+  display: none
+}
+
+@media (min-width: 1440px) {
+  .page-heading h1 {
+      font-size:3rem;
+      line-height: 4rem
+  }
+
+  .page-heading__constant {
+      font-size: 1.8rem
+  }
+
+  .page-heading.light {
+      left: 120px;
+      top: 160px
+  }
+}
+
+@media (max-width: 778px) {
+  .page-heading h1 {
+      font-size:2.2rem;
+      line-height: 1.5rem
+  }
+
+  .page-heading__constant {
+      font-size: 1rem
+  }
+}
+
+@media (max-width: 650px) {
+  .page-heading h1 {
+      font-size:1.8rem;
+      line-height: 1.5rem
+  }
+
+  .page-heading__constant {
+      font-size: 1rem
+  }
+}
+
+@media (max-width: 450px) {
+  .page-heading.light {
+      display:none
+  }
+
+  .home__heading--novideo {
+      display: block
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import CardHeading from '../Headings/CardHeading';
-import './Card.css'
+// import './Card.css'
 import classnames from 'classnames';
 
 const Divider = props => (

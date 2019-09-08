@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import './Card.css';
+// import './Card.css';
 
 const Card = props => (
   <div className={classnames("card", props.className)}>

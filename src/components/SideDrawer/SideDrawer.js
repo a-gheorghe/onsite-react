@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import './SideDrawer.css';
+// import './SideDrawer.css';
 import { NavLink } from 'react-router-dom';
 
 const sideDrawer = props => {

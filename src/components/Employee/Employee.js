@@ -1,5 +1,5 @@
 import React from 'react';
-import './Employee.css';
+// import './Employee.css';
 
 const Employee = props => console.log(props) || (
   <div className="employee row no-gutters justify-content-between">
@@ -8,12 +8,8 @@ const Employee = props => console.log(props) || (
       </div>
         <div className="employee-info col col-12 col-md-9">
           <div className="row no-gutters">
-            <span className="employee-name col-12 col-lg-auto"> Tiago Almeida </span>
-            <span className="employee-title col-12 col-lg-auto"> Project Manager </span>
-          </div>
-          <div className="employee-bio">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            <span className="employee-name col-12 col-lg-auto"> {props.name} </span>
+            <span className="employee-title col-12 col-lg-auto"> {props.position} </span>
           </div>
         </div>
       </div>

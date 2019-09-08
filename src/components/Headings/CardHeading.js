@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardHeading.css'
+// import './CardHeading.css'
 import classnames from 'classnames';
 
 const CardHeading = props => (

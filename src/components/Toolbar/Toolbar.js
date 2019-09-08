@@ -1,6 +1,6 @@
 import React from 'react';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-import './Toolbar.css';
+// import './Toolbar.css';
 import logo from '../../assets/logo-red.svg'
 import classnames from 'classnames';
 import {

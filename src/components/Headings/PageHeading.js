@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import './PageHeading.css'
+// import './PageHeading.css'
 
 const PageHeading = props => (
   <div className={classnames("page-heading", { "light": props.light })}>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Map.css'
+// import './Map.css'
 
 class Map extends Component {
 

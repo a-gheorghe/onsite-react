@@ -14,7 +14,8 @@ import {
   Route,
   Switch,
   Redirect,
-  withRouter
+  withRouter,
+  BrowserRouter
 } from 'react-router-dom';
 
 class App extends Component {
@@ -36,26 +37,30 @@ class App extends Component {
   }
 
   changeActivePageHandler = (page) => {
+    console.log('changing page', page)
     this.setState({ activePage: page })
   }
 
   render() {
+    const { sideDrawerOpen, activePage } = this.state
     return (
-      <div className="app">
-          <Toolbar show={this.state.sideDrawerOpen} drawerClickHandler={this.drawerToggleClickHandler} changeActivePage={this.changeActivePageHandler} activePage={this.state.activePage} />
-          <SideDrawer show={this.state.sideDrawerOpen} changeActivePage={this.changeActivePageHandler} closeSideBar={this.backdropClickHandler} activePage={this.state.activePage} />
-          { this.state.sideDrawerOpen && <Backdrop click={this.backdropClickHandler} /> }
-          <main>
-            <Switch>
-              <Route exact path="/"  component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/gallery" component={Gallery} />
-              <Route path="/services" component={Services} />
-              <Route path="/contact" component={Contact} />
-              <Redirect to="/" />
-            </Switch>
-          </main>
-      </div>
+      <BrowserRouter>
+        <div className="app">
+            <Toolbar show={sideDrawerOpen} drawerClickHandler={this.drawerToggleClickHandler} changeActivePage={this.changeActivePageHandler} activePage={activePage} />
+            <SideDrawer show={sideDrawerOpen} changeActivePage={this.changeActivePageHandler} closeSideBar={this.backdropClickHandler} activePage={activePage} />
+            { sideDrawerOpen && <Backdrop click={this.backdropClickHandler} /> }
+            <main>
+              <Switch>
+                <Route exact path="/" render={(props) => <Home {...props} activePage={activePage} changeActivePage={this.changeActivePageHandler} />} />
+                <Route path="/about" render={(props) => <About {...props} activePage={activePage} changeActivePage={this.changeActivePageHandler} />} />
+                <Route path="/gallery" render={(props) => <Gallery {...props} changeActivePage={this.changeActivePageHandler} />} />
+                <Route path="/services" render={(props) => <Services {...props} changeActivePage={this.changeActivePageHandler} />} />
+                <Route path="/contact" render={(props) => <Contact {...props} changeActivePage={this.changeActivePageHandler} />} />
+                <Redirect to="/" />
+              </Switch>
+            </main>
+        </div>
+      </BrowserRouter>
     );
   }
 }

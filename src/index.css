@@ -265,7 +265,8 @@ main {
   font-size: 1.3rem
 }
 
-.side-drawer a:active,.side-drawer a:hover {
+.side-drawer a:active,
+.side-drawer a:hover {
   color: var(--brand-color)
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 // import './Employee.css';
 
-const Employee = props => console.log(props) || (
+const Employee = props => (
   <div className="employee row no-gutters justify-content-between">
       <div className="employee__picture-holder col-12 col-md-3 align-self-center">
         <img src={props.photoPath} alt="guy1" />

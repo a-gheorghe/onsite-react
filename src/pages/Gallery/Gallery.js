@@ -56,8 +56,17 @@ const residentialImages = [
 ]
 
 class Gallery extends React.Component {
-  state = {
-    activeGallery: 0,
+  constructor(props){
+    super(props);
+    this.state = {
+      activeGallery: 0
+    }
+  }
+
+  componentDidMount() {
+      if (this.props.activePage !== "Gallery") {
+        this.props.changeActivePage('Gallery');
+      }
   }
 
   getActiveGallery = galleryNumber => {

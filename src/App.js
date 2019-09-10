@@ -37,7 +37,6 @@ class App extends Component {
   }
 
   changeActivePageHandler = (page) => {
-    console.log('changing page', page)
     this.setState({ activePage: page })
   }
 

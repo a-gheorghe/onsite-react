@@ -20,7 +20,6 @@ import res6 from '../../assets/gallery_images/residential/thumbnails/res6.jpg';
 import res7 from '../../assets/gallery_images/residential/thumbnails/res7.jpg';
 import res8 from '../../assets/gallery_images/residential/thumbnails/res8.jpg';
 import res9 from '../../assets/gallery_images/residential/thumbnails/res9.jpg';
-import res10 from '../../assets/gallery_images/residential/thumbnails/res10.jpg';
 import res11 from '../../assets/gallery_images/residential/thumbnails/res11.jpg';
 import res12 from '../../assets/gallery_images/residential/thumbnails/res12.jpg';
 import res13 from '../../assets/gallery_images/residential/thumbnails/res13.jpg';
@@ -44,15 +43,16 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 // import './Gallery.css'
 
-const commercialImages = [
-  rexall1, rexall2, rexall3, rexall4, rexall5, rexall6, rexall7, rexall8,
-  want1, want2, want3,
-  riocan1, riocan2, riocan3,
-  tacit1, tacit2, tacit3
-]
+const rexallImagesArn = [rexall1, rexall2];
+const rexallImagesBronte = [rexall3, rexall4];
+const rexallImagesGerrard = [rexall5, rexall6, rexall7, rexall8];
+
+const tacitImages = [tacit1, tacit2, tacit3]
+const wantImages = [want1, want2, want3]
+const riocanImages = [riocan1, riocan2, riocan3]
 
 const residentialImages = [
-  res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12, res13, res14
+  res1, res2, res3, res4, res5, res6, res7, res8, res9, res11, res12, res13, res14
 ]
 
 class Gallery extends React.Component {
@@ -83,11 +83,62 @@ class Gallery extends React.Component {
               <button className={this.getActiveGallery(1)} onClick={() => this.setState({ activeGallery: 1 })}> Residential </button>
           </div>
           { this.state.activeGallery === 0 &&
-          <Row>
-            {commercialImages.map(img => (
-              <Col xs={12} sm={6} md={4} lg={3} className="margin-top-20" key={img}> <img className="gallery-img" src={img} alt="construction of rexall building" /> </Col>
-            ))}
-          </Row>
+          <React.Fragment>
+            <Row>
+              <Col xs={12} className="margin-top-20 gallery__address">
+                <span className="gallery__address--name">Rexall</span> <br/>
+                22 Baskin Dr E, Arnprior
+              </Col>
+              {rexallImagesArn.map(img => (
+                <Col xs={12} sm={6} md={4} lg={3} className="margin-top-20" key={img}> <img className="gallery-img" src={img} alt="construction of rexall building" /> </Col>
+              ))}
+            </Row>
+            <Row>
+              <Col xs={12} className="margin-top-20 gallery__address">
+                  <span className="gallery__address--name">Rexall, Pharma Plus</span> <br/>
+                  Bronte Village, Oakville
+              </Col>
+              {rexallImagesBronte.map(img => (
+                <Col xs={12} sm={6} md={4} lg={3} className="margin-top-20" key={img}> <img className="gallery-img" src={img} alt="construction of rexall building" /> </Col>
+              ))}
+            </Row>
+            <Row>
+              <Col xs={12} className="margin-top-20 gallery__address">
+                  <span className="gallery__address--name">Rexall</span> <br/>
+                  Yonge and Gerrard, Toronto
+              </Col>
+              {rexallImagesGerrard.map(img => (
+                <Col xs={12} sm={6} md={4} lg={3} className="margin-top-20" key={img}> <img className="gallery-img" src={img} alt="construction of rexall building" /> </Col>
+              ))}
+            </Row>
+            <Row>
+              <Col xs={12} className="margin-top-20 gallery__address">
+                  <span className="gallery__address--name">Tacit</span> <br/>
+                  2 Sheppard Ave, Toronto
+              </Col>
+              {tacitImages.map(img => (
+                <Col xs={12} sm={6} md={4} lg={3} className="margin-top-20" key={img}> <img className="gallery-img" src={img} alt="construction of rexall building" /> </Col>
+              ))}
+            </Row>
+            <Row>
+              <Col xs={12} className="margin-top-20 gallery__address">
+                  <span className="gallery__address--name">RioCan</span> <br/>
+                  2 Sheppard Ave, Toronto
+              </Col>
+              {riocanImages.map(img => (
+                <Col xs={12} sm={6} md={4} lg={3} className="margin-top-20" key={img}> <img className="gallery-img" src={img} alt="construction of rexall building" /> </Col>
+              ))}
+            </Row>
+            <Row>
+              <Col xs={12} className="margin-top-20 gallery__address">
+                  <span className="gallery__address--name">Wantapothecary</span> <br/>
+                  2579 Yonge St, Toronto
+              </Col>
+              {wantImages.map(img => (
+                <Col xs={12} sm={6} md={4} lg={3} className="margin-top-20" key={img}> <img className="gallery-img" src={img} alt="construction of rexall building" /> </Col>
+              ))}
+            </Row>
+          </React.Fragment>
           }
           { this.state.activeGallery === 1 &&
           <Row>

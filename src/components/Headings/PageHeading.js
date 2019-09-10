@@ -3,7 +3,7 @@ import classnames from 'classnames';
 // import './PageHeading.css'
 
 const PageHeading = props => (
-  <div className={classnames("page-heading", { "light": props.light })}>
+  <div className={classnames("page-heading", props.className, { "light": props.light })}>
     { props.light ?
       <div className="page-heading__constant">On-Site Solutions General Contractors </div> :
       <div className="page-heading__constant">We deliver <span> Commercial and Residential </span> Construction </div>

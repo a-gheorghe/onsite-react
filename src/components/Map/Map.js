@@ -33,7 +33,7 @@ class Map extends Component {
     return (
       <div className="map">
           <div id="map" className="map__google"></div>
-          <button className="map__button"> Get Directions </button>
+          <a className="map__button" href="https://goo.gl/maps/rrELeH94VQjX5q1Y9"> Get Directions </a>
       </div>
     )
   }

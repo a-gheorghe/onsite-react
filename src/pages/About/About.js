@@ -6,8 +6,6 @@ import Divider from '../../components/Divider/Divider';
 import Employee from '../../components/Employee/Employee';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-// import './About.css'
 import Karam from '../../assets/guy1.png';
 import Marco from '../../assets/guy2.png';
 import David from '../../assets/guy3.png';
@@ -56,10 +54,11 @@ const About = (props) => {
               <Col xs={12} md={9} className="about__mission--container">
                 <CardHeading className="about__subheading--small" subheading="Our Mission" />
                 <div className="about__mission--text">
-                  <div>At On-Site Solutions we take pride in understanding our customer’s needs and are
-                    keen on delivering highest level of quality construction services. We believe in having
-                    an open book policy with our clients and pride ourselves on never delivering anything less
-                    than perfection to them.
+                  <div>
+                  At On-Site Solutions we take pride in understanding our customer’s needs and are
+                  keen on delivering the highest level of quality construction services. We believe in
+                  having an open book policy with our clients and pride ourselves on never delivering anything
+                  less than perfection to them.
                   </div>
                 </div>
               </Col>

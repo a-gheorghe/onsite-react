@@ -5,7 +5,6 @@ import ContactCard from '../../components/Card/ContactCard';
 import Map from '../../components/Map/Map';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import './Contact.css'
 
 const Contact = props => {
 
@@ -14,7 +13,7 @@ const Contact = props => {
       props.changeActivePage('Contact');
     }
   }, []);
-  
+
   return (
     <div className="contact__page">
       <div className="contact__page--content">
@@ -26,7 +25,7 @@ const Contact = props => {
                 <div className="contact__card--text">
                   <div>
                     <div> 83 Galaxy Blvd </div>
-                    <div>Toronto, Ontadssdsdfffsdfsrio, Canada </div>
+                    <div>Toronto, Ontario, Canada </div>
                   </div>
                   <div>
                     <div>Monday to Friday</div>
@@ -40,7 +39,7 @@ const Contact = props => {
               <CardHeading subheading="Contact Us" />
                 <div className="contact__card--text">
                   <div>
-                    <div><a href="tel:1-416-654-6000">+1.416.654.6000</a></div>
+                    <div><a href="tel:1-416-654-6000">416.654.6000</a></div>
                     <div> <a href="mailto:info@onsitegc.ca" target="_top">info@onsitegc.ca</a></div>
                   </div>
                   <div>

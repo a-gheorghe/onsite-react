@@ -258,15 +258,15 @@ main {
   line-height: 40px
 }
 
-.side-drawer a {
+.side-drawer .navLink {
   color: var(--font-color);
   font-weight: 600;
   text-decoration: none;
   font-size: 1.3rem
 }
 
-.side-drawer a:active,
-.side-drawer a:hover {
+.side-drawer .navLink:active,
+.side-drawer .navLink:hover {
   color: var(--brand-color)
 }
 
@@ -274,18 +274,27 @@ main {
   border-left: 4px solid var(--brand-color)
 }
 
-.side-drawer button {
+.side-drawer__button {
   background-color: var(--brand-color);
   color: var(--background-white);
   font-weight: 600;
   height: 60px;
   width: 100%;
   border: 0;
-  border-radius: 80px
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a.call-anchor,a.call-anchor:hover,a.call-anchor:visited {
-  color: #fff
+.side-drawer__button:hover {
+  background-color: #aa261a;
+}
+
+.side-drawer__button:visited,
+.side-drawer__button:hover {
+  color: white;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -331,8 +340,13 @@ a.call-anchor,a.call-anchor:hover,a.call-anchor:visited {
   color: var(--background-white)
 }
 
-.home__heading--novideo {
-  display: none
+@media (max-width: 450px) {
+  .home__heading--novideo {
+    display: none
+  }
+  .video-overlay {
+    opacity: 0.25;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -610,7 +624,7 @@ img.arrow {
   width: 100%
 }
 
-a.map__button {
+.map__button {
   padding: 17px 45px;
   border-width: 0;
   border-radius: 40px;
@@ -625,7 +639,12 @@ a.map__button {
   white-space: nowrap
 }
 
-a.map__button:visited {
+.map__button:hover {
+  background-color: #aa261a;
+  text-decoration: none;
+}
+
+.map__button:visited {
   color: #fff
 }
 
@@ -756,7 +775,7 @@ img.gallery-img {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 70px 80px 54px
+  padding: 70px 80px 154px;
 }
 
 .home__page--content {
@@ -797,6 +816,12 @@ video {
 
 .video-text {
   color: #fff
+}
+
+@media (max-width: 450px) {
+  .video-overlay {
+    opacity: 0.25;
+  }
 }
 
 .margin-top-20 {
@@ -843,7 +868,7 @@ video {
 
 @media (min-width: 1025px) {
   .home__page {
-      padding:70px 200px 54px
+      padding:70px 200px 154px
   }
 }
 
@@ -896,6 +921,15 @@ a.gallery-text {
   .services__page {
       padding:70px 200px 54px
   }
+}
+
+.gallery__address {
+  font-weight: 700;
+  color: #525260;
+}
+
+.gallery__address--name {
+  color: #d43021;
 }
 
 /*# sourceMappingURL=main.a2f7a732.chunk.css.map */

@@ -131,7 +131,7 @@ class Gallery extends React.Component {
             </Row>
             <Row>
               <Col xs={12} className="margin-top-20 gallery__address">
-                  <span className="gallery__address--name">Wantapothecary</span> <br/>
+                  <span className="gallery__address--name">WANT Apothecary</span> <br/>
                   2579 Yonge St, Toronto
               </Col>
               {wantImages.map(img => (

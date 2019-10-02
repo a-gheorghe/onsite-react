@@ -102,7 +102,7 @@ const Home = props => {
             <img className="recent-project-img" src={want3} alt="renovation" />
             <InvisibleCard className="recent-project-description">
               <DescriptionCard>
-                <span className="text-red text-bold"> Wantapothecar </span>
+                <span className="text-red text-bold"> WANT Apothecary </span>
                 <div className="text-bold margin-top-15 line-height-16">
                   2579 Yonge St. <br/> Toronto, Ontario
                 </div>

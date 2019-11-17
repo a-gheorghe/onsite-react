@@ -1,8 +1,9 @@
 import React from 'react';
-import './Divider.css'
+import classnames from 'classnames';
+// import './Divider.css'
 
 const Divider = props => (
-  <div className="divider" />
+  <div className={classnames("divider", props.className)} />
 );
 
 export default Divider;

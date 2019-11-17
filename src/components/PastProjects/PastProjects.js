@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../../components/Card/Card';
-import './PastProjects.css';
+// import './PastProjects.css';
 import classnames from 'classnames';
 import timhortons from '../../assets/logo_tim-hortons.svg';
 import rexall from '../../assets/logo_rexall.svg';

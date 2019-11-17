@@ -11,12 +11,13 @@ video {
   width: 100%;
   height: 100%;
   position: relative;
+  line-height: 100%;
 }
 
 .video-container::before {
     content:"";
     display: block;
-    height: 96.5%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -40,9 +41,6 @@ video {
   padding: 70px 80px 54px 80px;
 }
 
-.home__card {
-  /* top: -200px; */
-}
 .home__firm--text div {
   margin-top: 30px;
 }

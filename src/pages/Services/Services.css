@@ -1,0 +1,15 @@
+.services__page {
+    background-color: var(--background-grey);
+    box-sizing: border-box;
+    height: 100%;
+    padding: 50px 15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.services__page--content {
+    max-width: 1400px;
+    width: 100%
+}
